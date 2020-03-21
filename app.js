@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
-const port = 8080
+const port = process.env.PORT || 8080
 const path = require('path')
 const Task = require('./models/task')
 const toDoList = require('./models/to-do-list')
