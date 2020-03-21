@@ -1,3 +1,24 @@
-body{
-   display: flex;
+.section{
+   text-align: center
+}
+
+h1{
+    margin-top: 20px;
+}
+
+#taskName, #newTask{
+    width: 40%;
+}
+
+#details, #newDetails{
+    width: 40%;
+    height: 200px;
+}
+
+.taskButtons{
+    display: flex;
+}
+
+.taskButton{
+    margin-right: 15px;
 }

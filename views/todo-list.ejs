@@ -18,35 +18,32 @@
                         <li><%=doList[id].taskName%></li>
                         <li><%=doList[id].details%></li>
                         <li><%=doList[id].timeOfCreation%></li>
-                        <li>
-                            <form action="/complete/<%=id%>" method="post">
-                                <input class="button" type="submit" value="Complete">
+                        <span class="taskButtons">
+                            <form action="/complete/<%=id%>" method="post" class="taskButton">
+                                <input class="button button-outline" type="submit" value="Complete">
                             </form>
-                        </li>
-                        <li>
-                            <form action="/update/<%=id%>" method="post">
-                                <input class="button" type="submit" value="Update">
+                            
+                            <form action="/update/<%=id%>" method="post" class="taskButton">
+                                <input class="button button-outline" type="submit" value="Update">
                             </form>
-                        </li>
-                        <li>
-                            <form action="/delete/<%=id%>" method="post">
-                                <input class="button-black" type="submit" value="Delete">
+                        
+                            <form action="/delete/<%=id%>" method="post" class="taskButton">
+                                <input class="button button-clear" type="submit" value="Delete">
                             </form>
-                        </li>
+                        </span>
                     </td>
-                </tr>
+                
            <% } %>
            <% for(let id in doneList){%>
-                <tr>
                     <td>
                         <li><%=doneList[id].taskName%></li>
                         <li><%=doneList[id].details%></li>
                         <li><%=doneList[id].timeOfCreation%></li>
-                        <li>
-                            <form action="/delete/<%=id%>" method="post">
-                                <input class="button-black button-small" type="submit" value="Delete">
+                        <span class="taskButtons">
+                            <form action="/delete/<%=id%>" method="post" class="taskButton">
+                                <input class="button button-clear" type="submit" value="Delete">
                             </form>
-                        </li>
+                        </span>
                     </td>
                 </tr>
             <% } %>

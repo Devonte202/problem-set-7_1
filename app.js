@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 // Setting a public folder for our static files
-app.use(express.static('public'))
+app.use(express.static('styles'))
 
 //Set EJS as our templating language
 app.set('view engine', 'ejs')

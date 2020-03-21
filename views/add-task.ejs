@@ -1,16 +1,18 @@
 <html>
   <%-include('./partials/head.ejs')%>
   <body>
-    <h1>Welcome to This To-Do List App</h1>
-    <a class="button" href="/todo-list">To-Do List</a>
-    <form action="/add-new" method="post">
-      <fieldset>
-        <label for="taskName">Task Name</label>
-        <input type="text" placeholder="Wash the dishes" name="taskName" id="taskName">
-        <label for="details">Details</label>
-        <textarea placeholder="Purchase soap..etc.." name="details" id="details"></textarea>
+    <div class="section">
+      <h1>Welcome to This To-Do List App</h1>
+      <a class="button" href="/todo-list">To-Do List</a>
+      <form action="/add-new" method="post">
+        <fieldset>
+          <label for="taskName">Task Name</label>
+          <input type="text" placeholder="Wash the dishes" name="taskName" id="taskName">
+          <label for="details">Details</label>
+          <textarea placeholder="Purchase soap..etc.." name="details" id="details"></textarea>
+        </fieldset>
         <input class="button-primary" type="submit" value="Add">
-      </fieldset>
-    </form>
+      </form>
+    </div>
   </body>
 </html>
